@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<script src="builder.js"></script>
+<script>
+    function page() {
+        var tbox = fbox(90, 20, 5, 5, {"color": "af"});
+        tbox.appendChild(block("Hello, world!", {"color": "af"}));
+    }
+    build(page, {});
+</script>
+</body>
+</html>
