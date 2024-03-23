@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Web IBM VGA 9x16';
+    font-style: normal;
+    font-weight: 400;
+    src: url(web_ibm_vga_9x16.woff) format('woff');
+}
+
+:root {
+    --black: #0C0C0C;
+    --bblack: #767676;
+    --red: #C50F1F;
+    --bred: #E74856;
+    --green: #13A10E;
+    --bgreen: #16C60C;
+    --yellow: #C19C00;
+    --byellow: #F9F1A5;
+    --blue: #0037DA;
+    --bblue: #3B78FF;
+    --purple: #881798;
+    --bpurple: #B4009E;
+    --cyan: #3A96DD;
+    --bcyan: #61D6D6;
+    --white: #CCCCCC;
+    --bwhite: #F2F2F2;
+    --fg: var(--white);
+    --bg: var(--black);
+    --cursor: var(--bwhite);
+    --selectbg: var(--bwhite);
+}
+*::selection {
+    background-color: var(--selectbg);
+    color: var(--black);
+}
+* {
+    font-family: "Web IBM VGA 9x16" !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+}
+#time {
+    color: var(--yellow);
+}
+p {
+    margin: 0px;
+    padding: 0px;
+    white-space: pre;
+}
+body {
+    margin: 0px;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+#header {
+    width: 100%;
+    text-align: center;
+    position: absolute; 
+    color: var(--black);
+    background-color: var(--bwhite);
+}
